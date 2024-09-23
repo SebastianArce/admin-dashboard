@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar { 
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #0284c7;
+    color: white;
+}
+
+.main {
+    background-color: #f1f5f9;
+}
+
+.sidebar-first-section .sidebar-item,
+.sidebar-second-section .sidebar-item,
+.sidebar-third-section .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 20px;
+}
+
+.sidebar-second-section, .sidebar-third-section {
+    margin-top: 30px;
+}
