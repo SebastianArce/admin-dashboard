@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -13,7 +19,7 @@
 }
 
 .main {
-    background-color: #f1f5f9;
+    background-color: #e8ecef;
 }
 
 .sidebar-first-section .sidebar-item,
@@ -28,3 +34,48 @@
 .sidebar-second-section, .sidebar-third-section {
     margin-top: 30px;
 }
+
+.header {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    background-color: #e8ecef;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 80%; 
+    box-sizing: border-box; /* ensures padding is included in the width */
+    border: none; /* removes the black border */
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-weight: 700;
+}
+
+.profile-pic {
+    border-radius: 50%; /* Makes the image circular */
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Ensure the height matches the width for a perfect circle */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+
