@@ -80,6 +80,7 @@ body {
     object-fit: cover; /* Ensures the image covers the entire area */
 }
 
+
 .header-bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -89,4 +90,45 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.header-bottom-left .profile-pic {
+    width: 55px;
+    height: 55px;
+}
+
+.header-bottom-left .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-bottom-left .text-container p {
+    margin: 0;
+}
+
+.header-bottom-left .text-container .greeting {
+    font-weight: 700;
+    font-size: small;
+}
+
+.header-bottom-left .text-container .user-name {
+    font-size: large;
+    font-weight: 700;
+}
+
+.header-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-bottom-right .btn {
+    padding: 10px 20px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
 }
