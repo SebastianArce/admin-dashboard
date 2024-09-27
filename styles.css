@@ -41,6 +41,8 @@ body {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header-top {
@@ -78,4 +80,13 @@ body {
     object-fit: cover; /* Ensures the image covers the entire area */
 }
 
+.header-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
+.header-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
