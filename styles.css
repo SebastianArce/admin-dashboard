@@ -59,6 +59,10 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.header img {
+    cursor: pointer;
+}
+
 .header-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -228,11 +232,17 @@ body {
     gap: 5px;
     border-radius: 10px;
     padding: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .announcement .title {
     font-weight: 700;
     font-size: small;
+}
+
+.announcement .title:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .announcement .description {
