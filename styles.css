@@ -122,7 +122,8 @@ body {
 }
 
 .header-bottom-left .text-container p,
-.project p {
+.project p,
+.announcement p {
     margin: 0;
 }
 
@@ -213,3 +214,34 @@ body {
 .project .icons img {
     cursor: pointer
 }
+
+.announcements {
+    padding: 20px 20px 10px 10px;
+}
+
+.announcment-grid {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.announcement .title {
+    font-weight: 700;
+    font-size: small;
+}
+
+.announcement .description {
+    font-size: small;
+    color: #7d7d7d;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #e8ecef;
+}
+
