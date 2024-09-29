@@ -127,7 +127,8 @@ body {
 
 .header-bottom-left .text-container p,
 .project p,
-.announcement p {
+.announcement p,
+.trending p {
     margin: 0;
 }
 
@@ -240,7 +241,8 @@ body {
     font-size: small;
 }
 
-.announcement .title:hover {
+.announcement .title:hover,
+.trending .user-name:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -253,5 +255,35 @@ body {
 hr {
     width: 100%;
     border: 1px solid #e8ecef;
+}
+
+.trending {
+    padding: 20px 20px 10px 10px;
+}
+
+.trending-grid {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-item .user-name,
+.trending-item .trending-description {
+    font-size: small;
+}
+
+.trending-item .trending-description {
+    color: #7d7d7d;
 }
 
